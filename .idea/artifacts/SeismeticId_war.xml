@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SeismeticId:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="SeismeticId-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="SeismeticId:war exploded" />
+    </root>
+  </artifact>
+</component>
