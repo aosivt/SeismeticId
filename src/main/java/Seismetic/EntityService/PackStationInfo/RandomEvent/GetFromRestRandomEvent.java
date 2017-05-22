@@ -23,7 +23,8 @@ GetFromRestRandomEvent {
     public GetFromRestRandomEvent(String _stationId,String radius) {
 
         Client client = Client.create();
-        WebResource webResource = client.resource("http://localhost:8080/randomevent");
+//        WebResource webResource = client.resource("http://localhost:8080/randomevent");
+        WebResource webResource = client.resource("http://localhost:8180/getevent/randomevent");
         MultivaluedMap formData = new MultivaluedMapImpl();
         formData. add("stationid", _stationId);
         formData. add("radius", radius);
@@ -52,3 +53,4 @@ GetFromRestRandomEvent {
         this.randomSelectedObject = randomSelectedObject;
     }
 }
+

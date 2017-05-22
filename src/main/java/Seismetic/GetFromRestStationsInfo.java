@@ -16,7 +16,8 @@ public class GetFromRestStationsInfo {
     public GetFromRestStationsInfo() {
 
         Client client = Client.create();
-        WebResource webResource = client.resource("http://localhost:8080/stations");
+        WebResource webResource = client.resource("http://localhost:8180/getevent/stations");
+//        WebResource webResource = client.resource("http://localhost:8080/stations");
         MultivaluedMap formData = new MultivaluedMapImpl();
         formData. add("stationid", "");
 

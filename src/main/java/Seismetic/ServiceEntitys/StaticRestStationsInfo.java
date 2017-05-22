@@ -13,7 +13,7 @@ public class StaticRestStationsInfo {
     public StaticRestStationsInfo() {
 
         Client client = Client.create();
-        WebResource webResource = client.resource("http://localhost:8080/stations");
+        WebResource webResource = client.resource("http://localhost:8180/getevent/stations");
         returnStationsInfo = webResource.type("application/x-www-form-urlencoded").post(ListReturnStationInfo.class, null);
     }
 
